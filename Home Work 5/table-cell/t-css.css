@@ -1,0 +1,102 @@
+.wrapper {
+	width:      1200px;
+	margin:     0 auto;
+	background: lightgrey;
+}
+
+p {
+	margin: 0;
+}
+
+.t_cell {
+	padding: 0;
+}
+
+.orangered {
+	background: orangered;
+	width:      400px;
+	outline:    2px solid black;
+}
+
+.lightgreen {
+	background: lightgreen;
+	outline:    2px solid black;
+	width:      800px;
+}
+
+.in_lightgreen {
+	outline: 2px solid black;
+}
+
+.lightpink {
+	width:   400px;
+	margin:  0 auto;
+}
+
+.in_lightpink {
+	background: lightpink;
+	outline:    2px solid black;
+}
+
+.blue{ 
+	background: blue;
+	width:      400px;
+}
+
+.yellow {
+	background: yellow;
+	width:      800px;
+}
+
+.red {
+	background: red;
+	width:      400px;
+}
+
+.lightcyan {
+	background: lightcyan;
+	width:      400px;
+}
+
+.darkseagreen {
+	background: darkseagreen;
+	outline:    2px solid black;
+}
+
+.pink {
+	background: pink;
+	outline:    2px solid black;
+}
+
+.orange {
+background: orange;
+outline:    2px solid black;
+}
+
+.over {
+width: 800px;
+}
+
+.lime {
+	background: lime;
+}
+
+.lime,
+.last{
+	width: 400px;
+}
+
+.yellow,
+.blue,
+.lightpink,
+.orangered,
+.lightgreen,
+.red,
+.over,
+.lightcyan,
+.last,
+.lime{
+	display: table-cell;
+	outline: 2px solid black;
+}
+
