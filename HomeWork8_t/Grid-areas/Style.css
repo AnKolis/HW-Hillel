@@ -1,0 +1,104 @@
+.wrapper {
+	width:      1200px;
+	margin:     0 auto;
+	background: lightgrey;
+	display:    grid;
+	grid-template-areas: 
+	"A B C"
+	"D D E"
+	"D D F"
+	"G G F"
+	"G G H"
+	"I J J"
+	"I K L"
+	"M M N"
+	"O P N"
+	"Q P N";
+}
+
+div {
+	outline: 2px solid black;
+}
+
+.orange {
+	background: orange;
+}
+
+.green {
+	background: green;	
+}
+
+.pink {
+	background: pink;
+}
+
+.aqua {
+	background: aqua;
+}
+ 
+.box-a {
+	grid-area: A ;
+}
+
+.box-b {
+	grid-area: B;
+} 
+.box-c {
+	grid-area: C;
+} 
+
+.box-d {
+	grid-area: D;
+}
+
+.box-e {
+	grid-area: E;
+}
+
+.box-f {
+	grid-area: F;
+}
+
+.box-g {
+	grid-area: G;
+}
+.box-h {
+	grid-area: H;
+}
+
+.box-i {
+	grid-area: I; 
+}
+
+.box-j {
+	grid-area: J;
+}
+
+.box-k {
+	grid-area: K;
+}
+
+.box-l{
+	grid-area: L;
+}
+
+.box-m {
+	grid-area: M;
+}
+
+.box-o {
+	grid-area: O;
+}
+
+.box-q {
+	grid-area: Q;
+}
+
+.box-p {
+	grid-area: P;
+}
+
+.box-n {
+	grid-area:N ;
+}
+
