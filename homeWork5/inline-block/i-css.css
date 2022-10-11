@@ -1,0 +1,120 @@
+#inline_b {
+	width:      1200px;
+	margin:     0 auto;
+	background: lightgrey;
+}
+
+#inline_b p {
+	margin: 0;
+}
+
+.inline_b {
+	padding:   0;
+	font-size: 0;
+}
+
+#inline_b .orangered {
+	background: orangered;
+	width:      400px;
+	font-size:  20px;
+}
+
+#inline_b .lightgreen {
+	background: lightgreen;
+	outline:    2px solid black;
+	width:      800px;
+}
+
+#inline_b .in_lightgreen {
+	outline:   2px solid black;
+	font-size: 20px;
+}
+
+#inline_b .lightpink {
+	width:   400px;
+	margin:  0 auto;
+}
+
+#inline_b .in_lightpink {
+	background: lightpink;
+	outline:    2px solid black;
+	font-size:  20px;
+}
+
+#inline_b .blue{ 
+	background: blue;
+	width:      400px;
+	font-size:  20px;
+}
+
+#inline_b .yellow {
+	background: yellow;
+	width:      800px;
+	font-size: 20px;
+}
+
+#inline_b .red {
+	background: red;
+	width:      400px;
+	font-size: 20px;
+	outline: 2px solid black;
+}
+
+#inline_b .over_red,
+#inline_b .over_2,
+#inline_b .last {
+	font-size: 0;
+}
+
+#inline_b .lightcyan {
+	background: lightcyan;
+	width:      400px;
+	font-size:  20px;
+}
+
+#inline_b .darkseagreen {
+	background: darkseagreen;
+	outline:    2px solid black;
+	font-size:  20px;
+}
+
+#inline_b .pink {
+	background: pink;
+	outline:    2px solid black;
+	font-size:  20px;
+}
+
+#inline_b .orange {
+background: orange;
+outline:    2px solid black;
+font-size:  20px;
+}
+
+#inline_b .over {
+width: 800px;
+}
+
+#inline_b .lime {
+	background: lime;
+	font-size: 20px;
+}
+
+#inline_b .lime,
+#inline_b .last{
+	width: 400px;
+}
+
+#inline_b .yellow,
+#inline_b .blue,
+#inline_b .lightpink,
+#inline_b .orangered,
+#inline_b .lightgreen,
+#inline_b .red,
+#inline_b .over,
+#inline_b .lightcyan,
+#inline_b .last,
+#inline_b .lime,
+#inline_b .over_red{
+	display: inline-block;
+	outline: 2px solid black;
+}

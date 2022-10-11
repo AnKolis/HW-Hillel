@@ -1,0 +1,92 @@
+@import url("homeWork5/inline-block/i-css.css");
+@import url("homeWork5/table-cell/t-css.css");
+@import url("homeWork6/float.css");
+@import url("homeWork7/after/after.css");
+@import url("homeWork7/flex/flex.css");
+@import url("homeWork8/grid-t-columns/grid-t.css");
+@import url("homeWork8/grid-areas/areas.css");
+@import url("homeWork9/hw9.css");
+
+
+
+.main{
+	position: relative;
+	z-index: 10;	
+}
+
+#main-html  li{
+	display:    inline-block;
+	font-size:  20px;
+	background: lightskyblue;
+	width:      300px;
+}
+
+#main-html  li:hover{
+	background: lime;
+}
+
+.main>li+li,
+.child-2>li{
+	border-left: 2px solid black;
+}
+
+ul li ul li ul li:first-child{
+	border-bottom: 2px solid black ;
+}
+
+.child>li{
+	border-top: 2px solid black;
+}
+
+.child-3>li{
+	border-right:  2px solid black;
+}
+
+.father:hover .child,
+.father-2:hover .child-2,
+.father-3:hover .child-3{
+	display: block;
+}
+
+ .main,
+ .child,
+ .child-2{
+	font-size:  0;
+	text-align: center;
+	padding:    0;	
+}
+
+#main-html  a{
+	text-decoration: none;
+	color:           black;
+	font-size: 		 20px;
+	padding: 		 10px 30px;
+	display: 		 block;	
+}
+
+.child{
+	position: absolute;
+	top:  	  100%;
+	left:	  0px;
+	display: none;
+}
+
+.father,
+.father-2,
+.father-3{
+	position: relative;
+}
+
+.child-2{
+	position: absolute;
+	top: 	  0;
+	left: 	  100%;
+	display: none;
+}
+
+.child-3{
+	position: absolute;
+	bottom:   0;
+	right:    100%;
+	display: none;
+}

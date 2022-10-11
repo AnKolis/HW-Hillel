@@ -1,0 +1,43 @@
+#after {
+	width:      1200px;
+	margin:     0 auto;
+	background: lightgrey;
+}
+
+.width_400 {
+	width: 400px;
+}
+
+.width_800 {
+width: 800px;
+}
+
+#after div {
+outline: 2px solid black;
+}
+
+.orange {
+	background: orange;
+}
+
+.green {
+	background: green;	
+}
+
+.pink {
+	background: pink;
+}
+
+.aqua {
+	background: aqua;
+}
+
+.clearfix:after {
+	content: "";
+	clear: left;
+	display: block;
+}
+
+.over {
+	float: left;
+}

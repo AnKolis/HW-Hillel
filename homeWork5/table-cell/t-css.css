@@ -1,0 +1,102 @@
+#t_cell {
+	width:      1200px;
+	margin:     0 auto;
+	background: lightgrey;
+}
+
+#t_cell p {
+	margin: 0;
+}
+
+.t_cell {
+	padding: 0;
+}
+
+#t_cell .orangered {
+	background: orangered;
+	width:      400px;
+	outline:    2px solid black;
+}
+
+#t_cell .lightgreen {
+	background: lightgreen;
+	outline:    2px solid black;
+	width:      800px;
+}
+
+#t_cell .in_lightgreen {
+	outline: 2px solid black;
+}
+
+#t_cell .lightpink {
+	width:   400px;
+	margin:  0 auto;
+}
+
+#t_cell .in_lightpink {
+	background: lightpink;
+	outline:    2px solid black;
+}
+
+#t_cell .blue{ 
+	background: blue;
+	width:      400px;
+}
+
+#t_cell .yellow {
+	background: yellow;
+	width:      800px;
+}
+
+#t_cell .red {
+	background: red;
+	width:      400px;
+}
+
+#t_cell .lightcyan {
+	background: lightcyan;
+	width:      400px;
+}
+
+#t_cell .darkseagreen {
+	background: darkseagreen;
+	outline:    2px solid black;
+}
+
+#t_cell .pink {
+	background: pink;
+	outline:    2px solid black;
+}
+
+#t_cell .orange {
+background: orange;
+outline:    2px solid black;
+}
+
+#t_cell .over {
+width: 800px;
+}
+
+#t_cell .lime {
+	background: lime;
+}
+
+#t_cell .lime,
+#t_cell .last{
+	width: 400px;
+}
+
+#t_cell .yellow,
+#t_cell .blue,
+#t_cell .lightpink,
+#t_cell .orangered,
+#t_cell .lightgreen,
+#t_cell .red,
+#t_cell .over,
+#t_cell .lightcyan,
+#t_cell .last,
+#t_cell .lime{
+	display: table-cell;
+	outline: 2px solid black;
+}
+
