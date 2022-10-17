@@ -10,35 +10,39 @@
 
 .main{
 	position: relative;
-	z-index: 10;	
+	z-index:  10;	
 }
 
 #main-html  li{
 	display:    inline-block;
 	font-size:  20px;
-	background: lightskyblue;
+	background: black;
 	width:      300px;
 }
 
 #main-html  li:hover{
-	background: lime;
+	background: lightskyblue;
+}
+
+#main-html  a:hover{
+	color: black;
 }
 
 .main>li+li,
 .child-2>li{
-	border-left: 2px solid black;
+	border-left: 2px solid white;
 }
 
 ul li ul li ul li:first-child{
-	border-bottom: 2px solid black ;
+	border-bottom: 2px solid white ;
 }
 
 .child>li{
-	border-top: 2px solid black;
+	border-top: 2px solid white;
 }
 
 .child-3>li{
-	border-right:  2px solid black;
+	border-right:  2px solid white;
 }
 
 .father:hover .child,
@@ -57,8 +61,9 @@ ul li ul li ul li:first-child{
 
 #main-html  a{
 	text-decoration: none;
-	color:           black;
-	font-size: 		 20px;
+	font-weight:     800;
+	color:           white;
+	font-size: 		 25px;
 	padding: 		 10px 30px;
 	display: 		 block;	
 }
@@ -67,7 +72,7 @@ ul li ul li ul li:first-child{
 	position: absolute;
 	top:  	  100%;
 	left:	  0px;
-	display: none;
+	display:  none;
 }
 
 .father,
@@ -80,12 +85,12 @@ ul li ul li ul li:first-child{
 	position: absolute;
 	top: 	  0;
 	left: 	  100%;
-	display: none;
+	display:  none;
 }
 
 .child-3{
 	position: absolute;
 	bottom:   0;
 	right:    100%;
-	display: none;
+	display:  none;
 }
