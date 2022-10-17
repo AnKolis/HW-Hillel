@@ -1,0 +1,52 @@
+html,body {
+	scroll-behavior: smooth;
+}
+
+.wrapper { 
+	text-align: justify; 
+	width:      1200px; 
+	margin:     20px auto;
+ 	padding:    10px; 
+ 	background: #e8af72;
+}
+
+.headLine {
+ 	text-align: center;
+ 	border:	    5px black dashed; 
+ 	background: orange;
+}
+
+h2 {
+	text-align: center;
+	color: 		darkred;	
+}
+
+p {
+ 	font-weight: bolder
+}
+
+p.italicNormal {
+	font-style:  italic;
+	font-weight: normal;
+}
+
+h3 {
+	text-align: center;
+}
+
+span {
+	border: 2px darkred dotted;
+}
+
+.gallary {
+	text-align: center;
+}
+
+img {
+	padding: 10px 10px;
+	width: 500px;
+	vertical-align: top;
+}
+a {
+	font-size: x-large;
+}
