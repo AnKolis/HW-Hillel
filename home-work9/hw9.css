@@ -56,7 +56,8 @@ p.italicNormal {
 	text-align: left;
 	position: 	fixed;
 	left: 		10px;
-	top: 		50px;
+	top:        50%;
+    margin-top: -207px;
 }
 
 .review{
