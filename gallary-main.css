@@ -1,74 +1,62 @@
 
 
-#main-html .icon-1{
-    width:      50px;
-    height:     50px;
-    background: url('photo-main/css_sprites.png') -50px -0;
-    display:    inline-block;
-    position:   fixed;
-    bottom:     2%;
-    right:      18%;
+body{
+    background:      fixed url('photo-main/bg-2.jpg') no-repeat ;
+    background-size: cover;
 }
 
-#main-html .icon-1:hover{
-    width:      50px;
-    height:     50px;
-    position:   fixed;
-    bottom:     2%;
-    right:      18%;
+#social-network{
+    position:  fixed;
+    right:     10%;
+    bottom:    2%;
+   text-align: center ;
+    
+}
+
+#social-network li{
+    display:       inline-block;
+    padding-right: 3px; 
+}
+
+#social-network li:last-child{
+    padding-right: 0;
+}
+
+#social-network a{
+    display:   block;
+    width:     50px;
+    height:    50px;
+    font-size: 25px;
+}
+
+#social-network-2{
+    font-size: 0;
+    padding:   0;
+}
+
+
+.link-1{
+     background: url('photo-main/css_sprites.png') -50px -0;
+}
+
+.link-1:hover{
     background: url('photo-main/css_sprites.png') -0 -0;
     transition: 0.5s;
 }
 
-#main-html .icon-2:hover{
-    transition: 0.5s;
-    position:   fixed;
-    width:      50px; 
-    height:     50px;
-    bottom:     2%;
-    right:      13%;
-    background: url('photo-main/css_sprites.png') -100px -0;
-} 
-
- #main-html .icon-3:hover{
-   position:   fixed;
-   width:      50px; 
-   height:     50px;
-   bottom:     2%;
-   right:      8%;
-   background: url('photo-main/css_sprites.png') -200px -0;
-   transition: 0.5s;
- }
- 
-
-#main-html .icon-2{
-    width:      50px; 
-    height:     50px;
+.link-2{
     background: url('photo-main/css_sprites.png') -150px -0;
-    position:   fixed;
-    bottom:     2%;
-    right:      13%;
 }
 
-#main-html .icon-3{
-    position:   fixed;
-    bottom:     2%;
-    right:      8%;
-    width:      50px; 
-    height:     50px;
-    background: url('photo-main/css_sprites.png') -250px -0;
+.link-2:hover{
+    background: url('photo-main/css_sprites.png') -100px -0;
+    transition: 0.5s;
+}
+.link-3{
+    background: url('photo-main/css_sprites.png') -250px -0; 
 }
 
-#main-html .icon{
-    position: relative;
-    padding:  0;
-} 
-
-#main-html .icon a{
-    padding: 25px;
-}
-
-body {
-    background:fixed url('photo-main/bg-2.jpg') no-repeat ;
-    background-size: cover;
-}
+.link-3:hover{
+    background: url('photo-main/css_sprites.png') -200px -0;
+    transition: 0.5s;
+    }
