@@ -29,6 +29,7 @@
 #main-html  a:hover{
 	color: black;
 }
+
 #main-html  a{
 	color:           white;
 	font-size:       20px;
@@ -88,14 +89,16 @@ ul li ul li ul li:first-child{
 }
 
 
-#main-html .home:before{
+#main-html a.home:before{
 	content: "";
+	display: inline-block;
 	width: 60px;
 	height: 60px;
 	position: absolute;
 	top: 0;
-	left: 1%; 
-    background: url('photo-main/css_sprites-2.png') -646px -2px;;
+	left: 0; 
+    background: url('photo-main/css_sprites-2.png') -646px -2px;
+    transition: 0.5s;
 }
 
 #main-html .gallery-menu:before{
@@ -104,18 +107,31 @@ ul li ul li ul li:first-child{
 	height: 60px;
 	position: absolute;
 	top: 0;
-	left: 2%; 
+	left: 1%; 
     background: url('photo-main/css_sprites-2.png') -582px -2px;
 }
 
-#main-html .block-menu:before{
+#main-html .father>a:before{
 	content: "";
 	width: 60px;
 	height: 60px;
 	position: absolute;
 	top: 0;
-	right: 2%; 
+	right: 0; 
     background: url('photo-main/css_sprites-2.png') -518px -2px;
+    transition: 0.5s;
+}
+
+#main-html .father:hover a.block-menu:before{
+	content: "";
+    background: url('photo-main/css_sprites-2.png') -454px -2px;
+    transition: 0.5s;
+    position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 60px;
+	display: inline-block;
 }
 
 .child{
@@ -123,10 +139,7 @@ ul li ul li ul li:first-child{
 	top:  	  100%;
 	left:	  0px;
 	font-size: 25px;
-	/*display:  none;*/
-
-
-
+	display:  none;
 	padding:    0;
 	font-size:  0;
 	text-align:left;
@@ -157,4 +170,59 @@ ul li ul li ul li:first-child{
 	width: 200px;
 	height: 20px;
 	padding: 20px 45px;
+}
+
+
+ .father-2>a:before{
+	content: "";
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	right: 0; 
+    background: url('photo-main/css_sprites-2.png') -326px -2px;
+    transition: 0.5s;
+}
+
+ .father-2:hover a.menu-2-level:before{
+	content: "";
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	right: 0; 
+    background: url('photo-main/css_sprites-2.png') -390px -2px;
+    transition: 0.5s;
+}
+
+.father-3>a:before{
+	content: "";
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	left: 0; 
+    background: url('photo-main/css_sprites-2.png') -390px -2px;
+    transition: 0.5s; 
+}
+
+.father .gr-menu-2-level{
+	    padding: 20px 0px 20px 142px;
+    	width: 150px;
+}
+
+.father-3:hover a.gr-menu-2-level:before{
+	content: "";
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	left: 0; 
+    background: url('photo-main/css_sprites-2.png') -326px -2px;
+    transition: 0.5s; 
+
 }
