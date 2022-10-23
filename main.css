@@ -54,11 +54,11 @@ ul li ul li ul li:first-child{
 	border-right:  2px solid white;
 }
 
-.father:hover .child,
+/*.father:hover .child,
 .father-2:hover .child-2,
 .father-3:hover .child-3{
 	display: block;
-}
+}*/
 
  .main,
  .child-2{
@@ -86,6 +86,7 @@ ul li ul li ul li:first-child{
 	padding: 		 18px 208px 15px 12px;
 	display: 		 block;	
 	position:		 relative;
+
 }
 
 
@@ -97,7 +98,7 @@ ul li ul li ul li:first-child{
 	position: absolute;
 	top: 0;
 	left: 0; 
-    background: url('photo-main/css_sprites-2.png') -646px -2px;
+    background: url('photo-main/css_sprites-1.png') -582px -2px;
     transition: 0.5s;
 }
 
@@ -108,7 +109,7 @@ ul li ul li ul li:first-child{
 	position: absolute;
 	top: 0;
 	left: 1%; 
-    background: url('photo-main/css_sprites-2.png') -582px -2px;
+    background: url('photo-main/css_sprites-1.png') -646px -2px;
 }
 
 #main-html .father>a:before{
@@ -118,13 +119,13 @@ ul li ul li ul li:first-child{
 	position: absolute;
 	top: 0;
 	right: 0; 
-    background: url('photo-main/css_sprites-2.png') -518px -2px;
+    background: url('photo-main/css_sprites-1.png') -326px -2px;
     transition: 0.5s;
 }
 
 #main-html .father:hover a.block-menu:before{
 	content: "";
-    background: url('photo-main/css_sprites-2.png') -454px -2px;
+    background: url('photo-main/css_sprites-1.png') -390px -2px;
     transition: 0.5s;
     position: absolute;
 	top: 0;
@@ -134,15 +135,41 @@ ul li ul li ul li:first-child{
 	display: inline-block;
 }
 
-.child{
-	position: absolute;
-	top:  	  100%;
-	left:	  0px;
-	font-size: 25px;
-	display:  none;
+
+.father:hover #tc-block{
+	display: inline-block;
 	padding:    0;
 	font-size:  0;
-	text-align:left;
+	text-align: left;
+	position:   absolute;
+	height:     504%;
+	top:  	    100%;
+	left:	    0px;
+	font-size:  25px;
+	transition: height 2s ease;
+}
+
+
+.child{
+	position:   absolute;
+	height:      0;
+	top:  	    100%;
+	left:	    0px;
+	font-size:  25px;
+	padding:    0;
+	font-size:  0;
+	text-align: left;
+	overflow:   hidden;
+	transition: height 2s ease;	
+}
+
+ .father-2:hover #child-2{
+	height:   204%;
+	position: absolute;
+	top: 	  0;
+	left:     100%;
+	transition: height 2s ease;
+	overflow: visible;
 }
 
 .father,
@@ -155,14 +182,28 @@ ul li ul li ul li:first-child{
 	position: absolute;
 	top: 	  0;
 	left: 	  100%;
-	display:  none;
+	transition: height 2s ease;
+	height: 0;
+	
 }
 
 .child-3{
 	position: absolute;
 	bottom:   0;
+	right :    100%;
+	width: 0;
+	transition: width 2s ease;
+	/*display:  none;           */
+	overflow: hidden;
+}
+
+.father-3:hover .child-3{
+	position: absolute;
+	bottom:   0;
 	right:    100%;
-	display:  none;
+	width: 100%;
+	transition: width 2s ease;
+	overflow: visible;
 }
 
 .child a{
@@ -181,7 +222,7 @@ ul li ul li ul li:first-child{
 	position: absolute;
 	top: 0;
 	right: 0; 
-    background: url('photo-main/css_sprites-2.png') -326px -2px;
+    background: url('photo-main/css_sprites-1.png') -454px -2px;
     transition: 0.5s;
 }
 
@@ -193,7 +234,7 @@ ul li ul li ul li:first-child{
 	position: absolute;
 	top: 0;
 	right: 0; 
-    background: url('photo-main/css_sprites-2.png') -390px -2px;
+    background: url('photo-main/css_sprites-1.png') -518px -2px;
     transition: 0.5s;
 }
 
@@ -205,7 +246,7 @@ ul li ul li ul li:first-child{
 	position: absolute;
 	top: 0;
 	left: 0; 
-    background: url('photo-main/css_sprites-2.png') -390px -2px;
+    background: url('photo-main/css_sprites-1.png') -518px -2px;
     transition: 0.5s; 
 }
 
@@ -222,7 +263,6 @@ ul li ul li ul li:first-child{
 	position: absolute;
 	top: 0;
 	left: 0; 
-    background: url('photo-main/css_sprites-2.png') -326px -2px;
+    background: url('photo-main/css_sprites-1.png') -454px -2px;
     transition: 0.5s; 
-
 }

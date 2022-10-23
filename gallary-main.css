@@ -36,27 +36,27 @@ body{
 
 
 .link-1{
-     background: url('photo-main/css_sprites-2.png') -2px -2px;
+     background: url('photo-main/css_sprites-1.png') -56px -2px;
 }
 
 .link-1:hover{
-    background: url('photo-main/css_sprites-2.png') -56px -2px;
+    background: url('photo-main/css_sprites-1.png') -2px -2px;
     transition: 0.5s;
 }
 
 .link-2{
-    background: url('photo-main/css_sprites-2.png') -110px -2px;
+    background: url('photo-main/css_sprites-1.png') -164px -2px;
 }
 
 .link-2:hover{
-    background: url('photo-main/css_sprites-2.png') -164px -2px;
+    background: url('photo-main/css_sprites-1.png') -110px -2px;
     transition: 0.5s;
 }
 .link-3{
-    background: url('photo-main/css_sprites-2.png') -218px -2px; 
+    background: url('photo-main/css_sprites-1.png') -272px -2px; 
 }
 
 .link-3:hover{
-    background: url('photo-main/css_sprites-2.png') -272px -2px;
+    background: url('photo-main/css_sprites-1.png') -218px -2px;
     transition: 0.5s;
     }
