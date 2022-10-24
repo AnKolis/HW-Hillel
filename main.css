@@ -190,19 +190,18 @@ ul li ul li ul li:first-child{
 .child-3{
 	position: absolute;
 	bottom:   0;
-	right :    100%;
-	width: 0;
-	transition: width 2s ease;
+	right:    -100000%;
+	transition: right 2s ease;
 	/*display:  none;           */
 	overflow: hidden;
 }
 
+
 .father-3:hover .child-3{
 	position: absolute;
 	bottom:   0;
-	right:    100%;
-	width: 100%;
-	transition: width 2s ease;
+	right :    100%;
+	transition: right 2s ease;
 	overflow: visible;
 }
 
