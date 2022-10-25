@@ -10,21 +10,17 @@
 
 .main{
 	position: relative;
-	z-index:  10;
-	
+	z-index:  10;	
 }
 
 #main-html  li{
 	display:    inline-block;
 	font-size:  20px;
-	background: black;
-
-	
+	background: black;	
 }
 
 #main-html  li:hover{
 	background: lightskyblue;
-	
 }
 
 #main-html  a:hover{
@@ -81,7 +77,6 @@ ul li ul li ul li:first-child{
 	padding: 		 18px 208px 15px 12px;
 	display: 		 block;	
 	position:		 relative;
-
 }
 
 
@@ -130,9 +125,7 @@ ul li ul li ul li:first-child{
 	display:    inline-block;
 }
 
-
-.father:hover #tc-block{
-	display:    inline-block;
+.father:hover .child{
 	padding:    0;
 	font-size:  0;
 	text-align: left;
@@ -141,11 +134,11 @@ ul li ul li ul li:first-child{
 	top:  	    100%;
 	left:	    0px;
 	font-size:  25px;
-	transition: height 2s ease;
-	
+	pointer-events: all;
+	opacity: 	1;
+	transition: height 1s ease, opacity 1s ease, pointer-events .5s ease ;
 }
  
-
 .child{
 	position:   absolute;
 	height:      0;
@@ -155,16 +148,16 @@ ul li ul li ul li:first-child{
 	padding:    0;
 	font-size:  0;
 	text-align: left;
-	transition: height 2s ease;	
-	overflow:   hidden;	
+	transition: height 1s ease, opacity 1s ease, pointer-events .5s ease ;
+	opacity:    0;
+	pointer-events: none;	
 }
 
  .father-2:hover #child-2{
-	height:     204%;
 	position:   absolute;
 	top: 	    0;
 	left:       100%;
-	transition: height 2s ease;
+	transition: top .5s ease, overflow 0.5s ease ;
 	overflow:   visible;
 }
 
@@ -176,26 +169,25 @@ ul li ul li ul li:first-child{
 
 .child-2{
 	position: absolute;
-	top: 	    0;
+	top: 	    -1000%;
 	left: 	    100%;
-	transition: height 2s ease;
-	height:     0;
-	
+	transition: top .5s ease;
+	overflow:   hidden;
 }
 
 .child-3{
-	position: absolute;
+	position:   absolute;
 	bottom:     0;
 	right:      1000%;
-	transition: right 1s ease;
+	transition: right .5s ease, overflow .5s ease;
+	overflow:   hidden;
 }
-
 
 .father-3:hover .child-3{
 	position:   absolute;
 	bottom:     0;
 	right :     100%;
-	transition: right 1s ease;
+	transition: right .5s ease;
 	overflow:   visible;
 }
 
@@ -205,7 +197,6 @@ ul li ul li ul li:first-child{
 	height:  20px;
 	padding: 20px 45px;
 }
-
 
  .father-2>a:before{
 	content:   "";
