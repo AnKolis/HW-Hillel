@@ -6,27 +6,54 @@ body{
 }
 
 #social-network{
-    position:  fixed;
+   /* position:  fixed;
     right:     10%;
     bottom:    2%;
-   text-align: center ;
-    
+   text-align: center ; */
+   
+   display: inline-block;
+   padding-top: 108px;
+   padding-bottom: 108px;
+   width: 500px;
+   float: right;
 }
 
 #social-network li{
     display:       inline-block;
-    padding-right: 3px; 
+    padding-right: 3px;
+
+}
+
+#social-network li:first-child{
+    display: block;
+    margin-left: 50%; 
+}
+#social-network li:nth-child(2){
+     margin-left: 40%; 
+     padding: 0;
+}
+
+#social-network li:nth-child(3){
+  padding-right: 0;
+    margin: 0;
+    margin-left: 10%; 
 }
 
 #social-network li:last-child{
     padding-right: 0;
+    margin: 0;
+    margin-left: 50%; 
 }
+
+
 
 #social-network a{
     display:   block;
     width:     50px;
     height:    50px;
     font-size: 25px;
+    transform: rotate(45deg);
+    overflow: hidden;
 }
 
 #social-network-2{
@@ -34,29 +61,67 @@ body{
     padding:   0;
 }
 
-
-.link-1{
-     background: url('photo-main/css_sprites-1.png') -56px -2px;
+.link-1:before{
+    content:    "";
+    display:    inline-block;
+    width:     50px;
+    height:    50px;
+    font-size: 25px;
+    transform: rotate(-45deg);
+    background: url('photo-main/css_sprites-1.png') -56px -2px;
 }
 
-.link-1:hover{
+li:hover a.link-1:before{
+    ontent:    "";
+    display:    inline-block;
+    width:     50px;
+    height:    50px;
+    font-size: 25px;
     background: url('photo-main/css_sprites-1.png') -2px -2px;
     transition: 0.5s;
 }
 
-.link-2{
+.link-2:before{
+    content:    "";
+    display:    inline-block;
+    width:     50px;
+    height:    50px;
+    font-size: 25px;
+    transform: rotate(-45deg);
     background: url('photo-main/css_sprites-1.png') -164px -2px;
 }
 
-.link-2:hover{
+li:hover a.link-2:before{
     background: url('photo-main/css_sprites-1.png') -110px -2px;
     transition: 0.5s;
 }
-.link-3{
+
+.link-3:before{
+    content:    "";
+    display:    inline-block;
+    width:     50px;
+    height:    50px;
+    font-size: 25px;
+    transform: rotate(-45deg);
     background: url('photo-main/css_sprites-1.png') -272px -2px; 
 }
 
-.link-3:hover{
+.link-4:before{
+    content:    "";
+    display:    inline-block;
+    width:     50px;
+    height:    50px;
+    font-size: 25px;
+    transform: rotate(-45deg);
+    background-color: lime; 
+}
+
+li:hover a.link-4:before{
+    background-color: blue; 
+    transition: 0.5s ease;
+}
+
+li:hover a.link-3:before{
     background: url('photo-main/css_sprites-1.png') -218px -2px;
     transition: 0.5s;
     }
