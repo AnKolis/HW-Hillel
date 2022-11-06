@@ -251,38 +251,3 @@ ul li ul li ul li:first-child{
     transition: 0.5s; 
 }
 
-.hover-me{
-	background: url('photo-main/hover-me.jpg')no-repeat ;
-    background-size: cover;
-    height: 421px;
-    width: 233px;
-    display: inline-block;
-    
-}
-
-.transform: after{
-content: "";
-clear: both;
-display: block;
-}
-
-.transform{
-	position: fixed;
-	top: 50%;
-   	margin-top: -210px ;
-   	background: black;
-   	overflow: hidden;
-   	left: 90%;
-   	height: 421px;
-}
-
-.transform:hover{
-	position: fixed;
-	top: 50%;
-   	margin-top: -210px ;
-   	background: black;
-   	overflow: hidden;
-   	left: 50%;
-   	height: 421px;
-   	transition: left .5s ease-in;
-}
