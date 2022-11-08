@@ -10,29 +10,29 @@ body{
 {
     display:       inline-block;
     padding-right: 3px;
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    overflow: hidden;
+    width:         50px;
+    height:        50px;
+    font-size:     25px;
+    overflow:      hidden;
 }
 
 .link-1:before{
     content:    "";
-    display:    inline-block;
-    width:     50px;
-    height:    50px;
-    font-size: 25px;
-    transform: rotate(45deg);
-    background: url('photo-main/css_sprites-1.png') -56px -2px;
+    display:       inline-block;
+    width:         50px;
+    height:        50px;
+    font-size:     25px;
+    transform:     rotate(45deg);
+    background:    url('photo-main/css_sprites-1.png') -56px -2px;
     border-radius: 25px;
 }
 
 li:hover a.link-1:before{
     ontent:    "";
     display:    inline-block;
-    width:     50px;
-    height:    50px;
-    font-size: 25px;
+    width:      50px;
+    height:     50px;
+    font-size:  25px;
     background: url('photo-main/css_sprites-1.png') -2px -2px;
     transition: 0.5s;
     
@@ -40,12 +40,12 @@ li:hover a.link-1:before{
 
 .link-2:before{
     content:    "";
-    display:    inline-block;
-    width:     50px;
-    height:    50px;
-    font-size: 25px;
-    transform: rotate(45deg);
-    background: url('photo-main/css_sprites-1.png') -164px -2px;
+    display:       inline-block;
+    width:         50px;
+    height:        50px;
+    font-size:     25px;
+    transform:     rotate(45deg);
+    background:    url('photo-main/css_sprites-1.png') -164px -2px;
     border-radius: 25px;
 }
 
@@ -57,29 +57,29 @@ li:hover a.link-2:before{
 
 .link-3:before{
     content:    "";
-    display:    inline-block;
-    width:     50px;
-    height:    50px;
-    font-size: 25px;
-    transform: rotate(45deg);
-    background: url('photo-main/css_sprites-1.png') -272px -2px;
+    display:       inline-block;
+    width:         50px;
+    height:        50px;
+    font-size:     25px;
+    transform:     rotate(45deg);
+    background:    url('photo-main/css_sprites-1.png') -272px -2px;
     border-radius: 25px;
 }
 
 .link-4:before{
     content:    "";
-    display:    inline-block;
-    width:     50px;
-    height:    50px;
-    font-size: 25px;
-    transform: rotate(45deg);
+    display:          inline-block;
+    width:            50px;
+    height:           50px;
+    font-size:        25px;
+    transform:        rotate(45deg);
     background-color: lime;
-    border-radius: 25px; 
+    border-radius:    25px; 
 }
 
 li:hover a.link-4:before{
     background-color: blue; 
-    transition: 0.5s ease;
+    transition:       0.5s ease;
     
 }
 
@@ -90,22 +90,19 @@ li:hover a.link-3:before{
     }
 
 .transform{
-    /*margin-top: -65px;*/
-
-
-    transform: translateY(-50%) ;
-    position: fixed;
-    top: 50%;
-    right: 0;
-    display: block;
-    width: 400px;
-    height: 160px;
-    background: black;
-    padding: 10px 10px 10px 60px;
-    outline: 1px solid white;
+    position:  fixed;
+    transform:      translateY(-50%);
+    top:             50%;
+    right:           0;
+    display:        block;
+    width:          400px;
+    height:         160px;
+    background:     black;
+    padding:        10px 10px 10px 60px;
+    outline:        1px solid white;
     vertical-align: top;
-    left: 97%;
-    transition: left .5s ease-in;
+    left:           97%;
+    transition:     left .5s ease-in;
 }
 
 
@@ -141,4 +138,162 @@ li:hover a.link-3:before{
 .transform:hover{
     left: 83%;
     transition: left .5s ease-in; 
+}
+
+
+.screw{
+    position: relative;
+    width: 500px;
+    height: 100px;
+    margin: 200px 200px 200px;
+    background: black;
+    font-size: 0;
+     background:
+    repeating-linear-gradient(135deg, grey 50px , black 70px);
+}
+
+.screw:before{
+    content: "";
+    width: 180px;
+    height: 100px;
+    display: inline-block;
+    background: black;
+
+}
+
+
+.bord-rad-top{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: black;
+    border: 1px solid black;
+    border-radius: 30px 0 0 0;
+    right: 450px;
+    bottom: 66px;
+}
+
+.bord-rad-bottom{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: black;
+    border: 1px solid black;
+    border-radius: 0 0 0 30px;
+    right: 450px;
+    top: 66px;
+}
+
+
+
+.fem-screw{
+    position: relative;
+    margin: 0 100px 0;
+    width: 200px;
+    height: 100px;
+    background: radial-gradient(circle,transparent 50px,black 50px);
+}
+
+.trapezium-top{
+    margin: 0 0 0 100px;
+    width: 120px;
+    border-left: 40px solid rgba(0, 0, 0, 0);
+    border-right: 40px solid rgba(0, 0, 0, 0);
+    border-bottom: 63px solid black;
+}
+
+.trapezium-bottom{
+    margin: 0 0 0 100px;
+    width: 120px;
+    border-left: 40px solid rgba(0, 0, 0, 0);
+    border-right: 40px solid rgba(0, 0, 0, 0);
+    border-top: 63px solid black; 
+}
+
+.fem-screw:before{
+    content: "";
+    position: absolute;
+    margin: 0 0 0 100px;
+    width: 0;
+    border-top: 50px solid rgba(0, 0, 0, 0);
+    border-bottom: 50px solid rgba(0, 0, 0, 0);
+    border-right: 30px solid  black;
+    font-size: 0; 
+    top: 0;
+    right: 100%;
+}
+
+.fem-screw:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    border-top: 50px solid rgba(0, 0, 0, 0);
+    border-bottom: 50px solid rgba(0, 0, 0, 0);
+    border-left: 30px solid  black;
+    font-size: 0; 
+    top: 0;
+    left: 100%;
+}
+
+
+.wrench-top{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    top: 0;   
+}
+
+.wrench-top-grad{
+height: 200px;
+    width: 100px;
+    background: 
+    radial-gradient(circle at 50% 0,rgba(0, 0, 0, 0) 130px, black 130px);
+    left: 25%;
+    position: absolute;
+}
+
+.wrench-top:before{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: black; 
+    top: 0;
+    right: 75%;
+}
+
+.wrench-top:after{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: black;
+    top: 0;
+    left: 75%;
+}
+
+.wrench-bottom-grad{
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    height: 400px;
+    border-radius: 0 0 50% 50%;
+    background: 
+    radial-gradient(circle at 30px 300px, rgba(0, 0, 0, 0) 10px, black 10px);
+}
+
+.wrench{
+    position: absolute;
+    width: 200px;
+    height: 600px;
+    background: transparent;
+    margin: 100px;
 }
