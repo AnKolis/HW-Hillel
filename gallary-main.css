@@ -103,6 +103,7 @@ li:hover a.link-3:before{
     vertical-align: top;
     left:           97%;
     transition:     left .5s ease-in;
+    z-index: 10;
 }
 
 
@@ -140,6 +141,12 @@ li:hover a.link-3:before{
     transition: left .5s ease-in; 
 }
 
+
+
+#gradient{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
 
 .screw{
     position: relative;
@@ -200,6 +207,9 @@ li:hover a.link-3:before{
     border-left: 40px solid rgba(0, 0, 0, 0);
     border-right: 40px solid rgba(0, 0, 0, 0);
     border-bottom: 63px solid black;
+    top: -63px;
+    right: 0;
+    position: absolute;
 }
 
 .trapezium-bottom{
@@ -208,6 +218,9 @@ li:hover a.link-3:before{
     border-left: 40px solid rgba(0, 0, 0, 0);
     border-right: 40px solid rgba(0, 0, 0, 0);
     border-top: 63px solid black; 
+    bottom: -63px;
+    right: 0;
+    position: absolute;
 }
 
 .fem-screw:before{
@@ -296,4 +309,23 @@ height: 200px;
     height: 600px;
     background: transparent;
     margin: 100px;
+    right: 0;
+    top: 0;
 }
+
+
+
+form,
+select{
+    appearance: none;
+    width: 100px;
+    height: 20px;
+    background: url('for-form.jpg') no-repeat right;
+   
+}
+
+.form{
+    display: inline-block;
+    margin:50px;
+}
+
