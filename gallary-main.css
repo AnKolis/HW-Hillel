@@ -315,17 +315,95 @@ height: 200px;
 
 
 
-form,
-select{
+form>select{
     appearance: none;
+    width: 163px;
+    height: 41px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rebeccapurple;
+    background: url('pictures/arrow2.png') no-repeat;    
+
+}
+
+
+form{
+    margin:50px;
+    position: relative;
+    display: inline-block;
+    background: white;
+
+}
+
+.number{
     width: 100px;
-    height: 20px;
-    background: url('for-form.jpg') no-repeat right;
+    height: 50px; 
+    position: relative;
+    z-index: 5;
+    background: transparent;
+
    
 }
 
-.form{
-    display: inline-block;
-    margin:50px;
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 0;
+   height: 50px;
+
 }
 
+
+
+.plus,
+.minus{
+    width: 16px;
+    height: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.minus{
+    background: url(pictures/minus1.png); 
+    bottom: 10px;
+    right: 3px;
+} 
+
+.plus{
+    background: url(pictures/plus1.jpg); 
+    top: 10px;
+    right: 3px;
+}
+
+.placehold{
+width: 100px;
+height: 50px;
+}
+
+::placeholder { 
+  color: deeppink;
+  opacity: 1; 
+  font-size: 18px;
+  font-weight: bold;
+  }
+
+  .range{
+    background: transparent;
+  }
+
+  #first{
+    display: none;
+  }
+
+  label{
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    border-radius: 16px;
+    border: 3px solid aqua;
+    background: radial-gradient(circle at 25% 50%, aqua 22%, black 24%);
+  }
+
+  input:checked+label{
+    background: radial-gradient(circle at 78% 50%, aqua 22%, black 24%);
+  } 
